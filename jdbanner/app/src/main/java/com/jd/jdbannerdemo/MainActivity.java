@@ -66,7 +66,10 @@ public class MainActivity extends AppCompatActivity {
         //设置是否为自动轮播，默认是“是”。
         jdBannerView.isAutoPlay(true);
         //设置圆角角度
-        jdBannerView.setCornerRadius(50);
+        jdBannerView.setCornerRadius(70);
+        //设置图片缩放格式
+        jdBannerView.setScaleType(6);
+
         //设置指示器的位置，小点点，左中右。
         jdBannerView.setIndicatorGravity(BannerConfig.CENTER)
                 //以上内容都可写成链式布局，这是轮播图的监听。比较重要。方法在下面。

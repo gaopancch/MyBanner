@@ -11,7 +11,7 @@ import android.view.View;
  */
 public class ZoomSlide2Transformer extends ABaseTransformer {
     private float MAX_SCALE = 1.0f;
-    private float MIN_SCALE = 0.9f;
+    private float MIN_SCALE = 0.95f;
     private float MIN_Alpha = 0.2f;
 
     @Override
@@ -22,7 +22,6 @@ public class ZoomSlide2Transformer extends ABaseTransformer {
             view.setScaleY(MIN_SCALE);
         } else if (position <= 1) //a页滑动至b页 ; a页从 0.0 -1 ;b页从1 ~ 0.0
         { // [-1,1]
-            // Log.e("TAG", view + " , " + position + "");
             float scaleFactor = MIN_SCALE + (1 - Math.abs(position)) * (MAX_SCALE - MIN_SCALE);
             float alpha = MIN_Alpha + ((1 - Math.abs(position)) * (MAX_SCALE - MIN_Alpha));
             if (position > 0) {

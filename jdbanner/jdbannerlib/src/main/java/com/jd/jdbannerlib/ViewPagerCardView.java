@@ -14,8 +14,8 @@ public class ViewPagerCardView{
 
     public static View createCardView(Context context, int resourceId,float cornerRadius){
         View view = LayoutInflater.from(context).inflate(resourceId,null,false);
-        ImageView roundedImageView = view.findViewById(R.id.card_view_imageview);
-//        roundedImageView.setCornerRadius(cornerRadius);
+        CustomRoundAngleImageView roundedImageView = view.findViewById(R.id.card_view_imageview);
+        roundedImageView.setRadius(cornerRadius);
         return view;
     }
 

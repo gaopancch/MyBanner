@@ -79,6 +79,14 @@ public class JDBannerView extends FrameLayout implements OnPageChangeListener {
         this.cornerRadius = cornerRadius;
     }
 
+    public int getScaleType() {
+        return scaleType;
+    }
+
+    public void setScaleType(int scaleType) {
+        this.scaleType = scaleType;
+    }
+
     private WeakHandler handler = new WeakHandler();
 
     public JDBannerView(Context context) {

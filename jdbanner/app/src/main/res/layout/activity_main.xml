@@ -10,8 +10,9 @@
     <com.jd.jdbannerlib.JDBannerView
         android:id="@+id/banner"
         android:layout_width="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_height="200dp"
-        jdbanner:image_scale_type_1 = "fit_xy"
         tools:ignore="MissingConstraints"></com.jd.jdbannerlib.JDBannerView>
     <TextView
         android:layout_width="wrap_content"

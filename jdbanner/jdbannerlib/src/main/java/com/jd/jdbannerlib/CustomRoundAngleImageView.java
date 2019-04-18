@@ -18,6 +18,14 @@ public class CustomRoundAngleImageView extends AppCompatImageView {
     float width, height;
     float radius = 50;
 
+    public float getRadius() {
+        return radius;
+    }
+
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
+
     public CustomRoundAngleImageView(Context context) {
         this(context, null);
         init(context, null);
@@ -56,7 +64,7 @@ public class CustomRoundAngleImageView extends AppCompatImageView {
             path.quadTo(width, 0, width, radius);
             path.lineTo(width, height - radius);
             path.quadTo(width, height, width - radius, height);
-            path.lineTo(12, height);
+            path.lineTo(radius, height);
             path.quadTo(0, height, 0, height - radius);
             path.lineTo(0, radius);
             path.quadTo(0, 0, radius, 0);
