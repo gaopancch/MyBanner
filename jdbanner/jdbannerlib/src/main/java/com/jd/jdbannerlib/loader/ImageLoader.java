@@ -1,14 +1,16 @@
 package com.jd.jdbannerlib.loader;
 
 import android.content.Context;
-import android.widget.ImageView;
+import android.view.View;
+
+import com.jd.jdbannerlib.ViewPagerCardView;
 
 
-public abstract class ImageLoader implements ImageLoaderInterface<ImageView> {
+public abstract class ImageLoader implements ImageLoaderInterface<View> {
 
     @Override
-    public ImageView createImageView(Context context) {
-        ImageView imageView = new ImageView(context);
+    public View createImageView(Context context,float radius) {
+        View imageView = ViewPagerCardView.createCardView(context,radius);
         return imageView;
     }
 

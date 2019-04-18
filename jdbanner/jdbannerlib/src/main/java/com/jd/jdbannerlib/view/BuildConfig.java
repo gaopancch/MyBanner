@@ -6,7 +6,7 @@ package com.jd.jdbannerlib.view;
  */
 public class BuildConfig {
     public static final boolean DEBUG = false;
-    public static final String APPLICATION_ID = "com.youth.banner";
+    public static final String APPLICATION_ID = "com.youth.jdbannerview";
     public static final String BUILD_TYPE = "release";
     public static final String FLAVOR = "";
     public static final int VERSION_CODE = 40;

@@ -19,6 +19,7 @@ import com.jd.jdbannerlib.transformer.TabletTransformer;
 import com.jd.jdbannerlib.transformer.ZoomInTransformer;
 import com.jd.jdbannerlib.transformer.ZoomOutSlideTransformer;
 import com.jd.jdbannerlib.transformer.ZoomOutTranformer;
+import com.jd.jdbannerlib.transformer.ZoomSlide2Transformer;
 
 public class Transformer {
     public static Class<? extends PageTransformer> Default = DefaultTransformer.class;//右向左平滑滑动
@@ -38,4 +39,5 @@ public class Transformer {
     public static Class<? extends PageTransformer> ZoomIn = ZoomInTransformer.class;
     public static Class<? extends PageTransformer> ZoomOut = ZoomOutTranformer.class;
     public static Class<? extends PageTransformer> ZoomOutSlide = ZoomOutSlideTransformer.class;
+    public static Class<? extends PageTransformer> ZoomSlide2 = ZoomSlide2Transformer.class;
 }
